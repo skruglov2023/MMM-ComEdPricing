@@ -13,7 +13,6 @@ module.exports = NodeHelper.create({
 
     async fetchData() {
         try {
-            const fetch = (await import("node-fetch")).default;
             const responses = await Promise.all([
                 fetch("https://hourlypricing.comed.com/api?type=5minutefeed").then(res => res.json()),
                 fetch("https://hourlypricing.comed.com/api?type=currenthouraverage").then(res => res.json())
