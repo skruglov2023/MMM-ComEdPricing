@@ -23,8 +23,9 @@ Module.register("MMM-ComEdPricing", {
             this.last5MinPrice = this.current5MinPrice;
             this.current5MinPrice = payload.current5MinPrice;
             this.currentHourPrice = payload.currentHourPrice;
-	    this.currentTime = new Date(payload.currentTime);
+	    	this.currentTime = new Date(payload.currentTime);
             this.updateDom();
+			this.sendNotification("COMED_DATA_BROADCAST", payload);
         }
     },
 
