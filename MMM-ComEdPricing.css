@@ -6,3 +6,29 @@
     font-size: 1.2em; /* Adjusted font size */
     margin: 5px 0;
 }
+.price {
+    font-weight: bold;
+}
+
+/* Time-of-day colors */
+.period-offPeak {
+    color: #00c853; /* green */
+}
+
+.period-morning {
+    color: #ffd600; /* yellow */
+}
+
+.period-peak {
+    color: #d50000; /* red */
+}
+
+.period-evening {
+    color: #ff6d00; /* orange */
+}
+
+/* Total price emphasis */
+.total-price {
+    font-size: 1.2em;
+    color: white;
+}
