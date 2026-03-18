@@ -66,13 +66,12 @@ getDom: function() {
         let hour = this.currentTime.getHours();
         let period = this.getTimePeriod(hour);
         let deliveryRate = this.config.timeOfDayRates[period];
-        let totalPrice = this.current5MinPrice + deliveryRate;
+        let totalPrice = this.currentHourPrice + deliveryRate;
 
         // 5-min price (color via CSS)
         let priceElement = document.createElement("div");
         priceElement.innerHTML = `5-Min Price: ${this.current5MinPrice}¢/kWh`;
         priceElement.classList.add("price");
-        priceElement.classList.add(`period-${period}`);
 
         // Hour average price
         let hourPriceElement = document.createElement("div");
@@ -86,7 +85,7 @@ getDom: function() {
         let totalElement = document.createElement("div");
         totalElement.innerHTML = `Price: ${totalPrice.toFixed(2)}¢/kWh`;
         totalElement.classList.add("total-price");
-
+        priceElement.classList.add(`period-${period}`);
         // Arrow (trend)
         let arrowElement = document.createElement("div");
         if (this.last5MinPrice !== null) {
