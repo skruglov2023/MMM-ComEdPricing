@@ -10,7 +10,7 @@ Module.register("MMM-ComEdPricing", {
 
     timePeriods: {
         offPeak: [21, 6],    // 9 PM - 6 AM
-        morning: [6, 1],   // 6 AM - 1 PM
+        morning: [6, 13],   // 6 AM - 1 PM
         peak: [13, 19],     // 1 PM - 7 PM
         evening: [19, 21]   // 7 PM - 9 PM
     }
