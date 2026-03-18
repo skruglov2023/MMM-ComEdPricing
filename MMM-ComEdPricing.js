@@ -110,7 +110,7 @@ getDom: function() {
         // Append everything
         wrapper.appendChild(priceElement);
         wrapper.appendChild(hourPriceElement);
-        wrapper.appendChild(deliveryElement);
+        //wrapper.appendChild(deliveryElement);
         wrapper.appendChild(totalElement);
         wrapper.appendChild(arrowElement);
         wrapper.appendChild(timeOfData);
