@@ -84,7 +84,6 @@ getDom: function() {
         // Total price
         let totalElement = document.createElement("div");
         totalElement.innerHTML = `Price: ${totalPrice.toFixed(2)}¢/kWh`;
-        totalElement.classList.add("total-price");
         priceElement.classList.add(`period-${period}`);
         // Arrow (trend)
         let arrowElement = document.createElement("div");
