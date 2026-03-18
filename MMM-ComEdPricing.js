@@ -70,21 +70,21 @@ getDom: function() {
 
         // 5-min price (color via CSS)
         let priceElement = document.createElement("div");
-        priceElement.innerHTML = `Current 5-Min Price: ${this.current5MinPrice}¢/kWh`;
+        priceElement.innerHTML = `5-Min Price: ${this.current5MinPrice}¢/kWh`;
         priceElement.classList.add("price");
         priceElement.classList.add(`period-${period}`);
 
         // Hour average price
         let hourPriceElement = document.createElement("div");
-        hourPriceElement.innerHTML = `Current Hour Avg Price: ${this.currentHourPrice}¢/kWh`;
+        hourPriceElement.innerHTML = `Average Price: ${this.currentHourPrice}¢/kWh`;
 
         // Delivery price
-        let deliveryElement = document.createElement("div");
-        deliveryElement.innerHTML = `Delivery (${period}): ${deliveryRate}¢/kWh`;
+        //let deliveryElement = document.createElement("div");
+        //deliveryElement.innerHTML = `Delivery (${period}): ${deliveryRate}¢/kWh`;
 
         // Total price
         let totalElement = document.createElement("div");
-        totalElement.innerHTML = `Total Price: ${totalPrice.toFixed(2)}¢/kWh`;
+        totalElement.innerHTML = `Price: ${totalPrice.toFixed(2)}¢/kWh`;
         totalElement.classList.add("total-price");
 
         // Arrow (trend)
